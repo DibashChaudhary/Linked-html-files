@@ -1,0 +1,96 @@
+body{
+    margin: 5px;
+}
+/* Cards  */
+.cards{
+    display: grid;
+    background: radial-gradient(rgb(64, 169, 197), rgb(17, 162, 219), rgb(48, 113, 170));
+    width:100%;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    margin-right:2px;
+  
+    grid-template-areas:
+    "h2-menu h2-menu h2-menu h2-menu"
+    "card-menu card-menu card-menu drink-menu"
+    "card-menu card-menu card-menu drink-menu"
+    "card-menu card-menu card-menu drink-menu"
+    "card-menu card-menu card-menu drink-menu"
+    "card-menu card-menu card-menu drink-menu";
+  }
+  
+  .h2-menu{
+    grid-area: h2-menu;
+    color:rgb(225, 191, 22);
+  }
+  
+  .cards-menu{
+    grid-area:card-menu;
+  
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  
+  /* .card-menu-list{
+    grid-area: card-menu-list;
+     display: grid;
+    height: fit-content;
+    
+  
+  
+    grid-template-areas: 
+    "smashed-avo bacon-egg"
+    "big-breakfast big-breakfast"
+    "veggie-breakfast eggs-benny";
+  } */
+  
+  .drink-menu{
+    grid-area: drink-menu;
+    margin-right: 10px;
+    border: 2px solid black;
+    padding: 5px;
+  }
+  /* h3  */
+  
+  h3{
+    color:rgb(240, 242, 237);
+  }
+  /* grid items list*/
+  
+  
+  .smashed-avo{
+    grid-area:smashed-avo;
+    float: left;
+  }
+  
+  .bacon-egg{
+    grid-area:bacon-egg;
+  }
+  
+  .big-breakfast{
+    grid-area:big-breakfast;
+  }
+  .veggie-breakfast{
+    grid-area:veggie-breakfast;
+  }
+  .eggs-benny{
+    grid-area:eggs-benny;
+  }
+  
+  /* using float in price */
+  .price{
+    float: right;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+    background: rgb(60, 16, 16);
+    min-height: 10vh;
+    min-width: 100%;
+    color: aliceblue;
+    align-items: center;
+  }
